@@ -1,0 +1,12 @@
+<resources>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="txtviewBackgroundStyle">
+        <attr name="BackCol1" format="color" />
+        <attr name="BackCol2" format="color" />
+        <attr name="FrontCol" format="color" />
+
+    </declare-styleable>
+</resources>

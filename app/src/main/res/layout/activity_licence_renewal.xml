@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluesea"
+    tools:context=".Licence_Renewal">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lr_dd_vessel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/vessel"
+                android:textSize="24sp"
+                android:inputType="text"
+                android:singleLine="true"
+                 android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textedit_back"
+                app:drawableEndCompat="@drawable/ic_arrow_down" />
+
+            <TextView
+                android:id="@+id/lr_txt_vesselName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/vesselName"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"/>
+
+            <TextView
+                android:id="@+id/lr_txt_vrc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/vrc"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"/>
+
+            <TextView
+                android:id="@+id/lr_txt_ownerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ownerName"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"/>
+
+            <TextView
+                android:id="@+id/lr_txt_aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/aadhar"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"/>
+
+            <EditText
+                android:id="@+id/lr_txt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:inputType="number"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"/>
+
+            <TextView
+                android:id="@+id/lr_txt_address"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:hint="@string/address"
+                android:textSize="24sp"
+                android:singleLine="false"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <TextView
+                android:id="@+id/lr_txt_licenceNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/licenceno"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"/>
+
+            <TextView
+                android:id="@+id/lr_txt_issueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/issuedate"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"/>
+
+            <TextView
+                android:id="@+id/lr_txt_validTill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/validitydate"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/licencerenewal"
+                    android:fontFamily="@font/chicle"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/licenceyear"
+                android:fontFamily="@font/chicle"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/lr_txt_licence_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fees"
+                android:fontFamily="@font/chicle"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/lr_licenceFees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:boxStrokeWidth="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lr_etxt_recieptNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/recieptno"
+                    android:textSize="24sp"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:background="@drawable/textviewback"
+                    android:textColorHint="#80191817" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/lr_txt_recieptDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/recieptdate"
+                android:textSize="24sp"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"
+                app:drawableEndCompat="@drawable/ic_arrow_down" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:boxStrokeWidth="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lr_etxt_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/recieptamount"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="15dp"
+                    android:singleLine="true"
+                    android:background="@drawable/textviewback"
+                    android:textColorHint="#80191817" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/paymenttype"
+                android:fontFamily="@font/chicle"
+                android:textSize="16sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/lr_dd_paymentType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:textSize="24sp"
+                android:inputType="text"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:paddingLeft="15dp"
+                android:background="@drawable/textviewback"
+                app:drawableEndCompat="@drawable/ic_arrow_down" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                app:boxStrokeWidth="0dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/lr_txt_Remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="@string/remarks"
+                    android:textSize="24sp"
+                    android:background="@drawable/textedit_back"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="15dp"
+                    android:singleLine="false"
+                    android:textColorHint="#80191817" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pic_border">
+                <ImageView
+                    android:id="@+id/lr_recieptPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:cropToPadding="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/receipt"
+                    android:scaleType="center"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/lr_btn_recieptPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/lr_recieptPic"
+                    app:layout_constraintStart_toEndOf="@+id/lr_recieptPic"
+                    app:srcCompat="@android:drawable/ic_menu_camera" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/lr_btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_options"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/save"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/lr_btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_options"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/cancel"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

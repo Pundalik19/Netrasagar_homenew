@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintTop_toBottomOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    tools:context="com.example.netrasagar.crew">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topsec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/txt_searchC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:width="50dp"
+            android:height="50dp"
+            android:hint="@string/searchcrew"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/btn_searchC"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_searchC"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_options"
+            android:fontFamily="sans-serif-black"
+            android:onClick="searchcrew"
+            android:text="@string/search"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btn_rfidC"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/btn_rfidC"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:foreground="@drawable/ic_rfid"
+            android:background="@drawable/btn_coloured"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ListView
+        android:id="@+id/lv_crew"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+         app:layout_constraintBottom_toTopOf="@id/navbtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topsec"
+        app:layout_constraintVertical_bias="0">
+
+    </ListView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/navbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/cmdbtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/btn_previousC"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/prev"
+            android:onClick="prevpage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/txv_pagesC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintRight_toLeftOf="@id/btn_nextC"
+            app:layout_constraintLeft_toRightOf="@id/btn_previousC"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/btn_nextC"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/next"
+            android:onClick="nextpage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/cmdbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/btn_addC"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_options"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/add"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/btn_cancelC"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_options"
+            android:fontFamily="sans-serif-black"
+            android:onClick="selctshow"
+            android:text="@string/cancel"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

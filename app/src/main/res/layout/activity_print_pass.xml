@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".print_pass">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pp_printCover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/pp_confirmMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="26dp"
+            style="@style/dataStyle1"
+            android:text="@string/printConfirmMessage"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <Button
+            android:id="@+id/pp_btnPrint"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            app:layout_constraintWidth_max="300dp"
+            android:layout_marginTop="30dp"
+            android:visibility="visible"
+            android:background="@drawable/btn_coloured"
+            android:fontFamily="@font/archivo_black"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:text="@string/print"
+            app:layout_constraintTop_toBottomOf="@id/pp_confirmMessage"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <Button
+            android:id="@+id/pp_btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintWidth_max="300dp"
+            android:visibility="visible"
+            android:background="@drawable/btn_coloured"
+            android:fontFamily="@font/archivo_black"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:text="@string/noThanks"
+            app:layout_constraintTop_toBottomOf="@id/pp_btnPrint"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pp_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="#5000"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

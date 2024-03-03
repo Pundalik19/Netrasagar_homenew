@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pass_open">
+
+    <LinearLayout
+        android:id="@+id/po_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:background="#5000"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/po_Selectors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/titleStyle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jetty"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <Button
+                android:id="@+id/po_rfid"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:foreground="@drawable/ic_rfid"
+                android:background="@drawable/btn_coloured"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="10dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/po_selJetty"
+            style="@style/styleEditOuterBox"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/jetty"
+            android:textSize="24sp"
+            android:inputType="text"
+            android:singleLine="true"
+            app:drawableEndCompat="@drawable/ic_arrow_down" />
+        <TextView
+            android:id="@+id/po_vesselLabel"
+            style="@style/titleStyle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vessel" />
+        <TextView
+            android:id="@+id/po_selVessel"
+            style="@style/styleEditOuterBox"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/vessel"
+            android:textSize="24sp"
+            android:inputType="text"
+            android:singleLine="true"
+            app:drawableEndCompat="@drawable/ic_arrow_down" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/po_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/po_Selectors">
+        <TextView
+            android:id="@+id/po_vesselName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vesselName"
+            style="@style/dataStyle1" />
+
+        <TextView
+            android:id="@+id/po_vrc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vrc"
+            style="@style/dataStyle1"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/po_passOpenCover"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/po_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/styleEditOuterBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/po_voyageDays"
+                        style="@style/styleEditInnerLayout"
+                        android:hint="@string/voyage_days"
+                        android:inputType="number" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/styleEditOuterBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/po_diesel"
+                        android:hint="@string/diesel"
+                        android:inputType="numberDecimal"
+                        style="@style/styleEditInnerLayout"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/styleEditOuterBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/po_life_jacket"
+                        android:hint="@string/life_jackets"
+                        android:inputType="number"
+                        style="@style/styleEditInnerLayout"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/styleEditOuterBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/po_lifeBouys"
+                        android:hint="@string/life_bouys"
+                        android:inputType="number"
+                        style="@style/styleEditInnerLayout"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <CheckBox
+                    android:id="@+id/po_gps"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textviewback"
+                    android:text="@string/gps"
+                    style="@style/dataStyle1"/>
+
+                <CheckBox
+                    android:id="@+id/po_vhf"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textviewback"
+                    android:text="@string/vhf"
+                    style="@style/dataStyle1" />
+
+                <CheckBox
+                    android:id="@+id/po_ais"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textviewback"
+                    android:text="@string/ais"
+                    style="@style/dataStyle1" />
+
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/po_crewAdd"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/po_crewList"
+                    app:maxImageSize="45dp"
+                    app:srcCompat="@drawable/ic_person_add" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/po_crewList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    app:layout_constraintHeight_max="300dp"
+                    app:layout_constraintHeight_min="200dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/po_crewList"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/styleEditOuterBox">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/po_CrewWentAdd"
+                            android:hint="@string/crew_count"
+                            android:inputType="number"
+                            style="@style/styleEditInnerLayout"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total_crew"
+                    style="@style/dataStyle1" />
+
+                <TextView
+                    android:id="@+id/po_TotalCrew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="00"
+                    style="@style/dataStyle1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/po_saveBtnCover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <Button
+                    android:id="@+id/po_btnSave"
+                    android:text="@string/save"
+                    android:layout_weight="1"
+                    style="@style/styleBtnGreen"/>
+
+                <Button
+                    android:id="@+id/po_btnCancel"
+                    android:text="@string/cancel"
+                    android:layout_weight="1"
+                    style="@style/styleBtnRed"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/po_crewAddListCover"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/po_header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <RadioGroup
+            android:id="@+id/po_radioGroup1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintBottom_toBottomOf="@id/po_refreshCrewAdd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/po_refreshCrewAdd">
+            <RadioButton
+                android:id="@+id/po_rbLastVoyage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lasVoyage"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                style="@style/dataStyle1"/>
+            <RadioButton
+                android:id="@+id/po_rbAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/all"
+                android:layout_weight="1"
+                style="@style/dataStyle1"/>
+
+        </RadioGroup>
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:foreground="@drawable/refreshbtn"
+            android:background="#0000"
+            android:id="@+id/po_refreshCrewAdd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:id="@+id/po_crwFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/filter_crew"
+            android:background="@drawable/textviewback"
+            android:padding="8dp"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/po_radioGroup1"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/po_crewAddList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/border"
+            android:minHeight="200dp"
+            app:layout_constraintTop_toBottomOf="@id/po_crwFilter"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/po_addCrewbuttonCover">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/po_addCrewbuttonCover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <Button
+                android:id="@+id/po_CrewAddListAdd"
+                style="@style/styleBtnGreen"
+                android:text="@string/add"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/po_CrewAddListCancel"
+                style="@style/styleBtnRed"
+                android:text="@string/cancel"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

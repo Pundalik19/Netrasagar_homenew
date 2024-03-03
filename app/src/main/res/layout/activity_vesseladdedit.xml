@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluesea"
+    tools:context=".vesseladdedit">
+
+    <ImageView
+        android:id="@+id/img_vesselV"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/vessel"
+         app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cancelV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_vesselV"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graduate"
+                    android:text="@string/vesselName"
+                    android:textColor="#F3E8E8"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_vesselNameV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewback"
+                    android:textColor="?FrontCol"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graduate"
+                    android:text="@string/vesselType"
+                    android:textColor="#F3E8E8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_vesselTypeV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewback"
+                    android:textColor="?FrontCol"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graduate"
+                    android:text="@string/vrc"
+                    android:textColor="#F3E8E8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_vrcV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewback"
+                    android:textColor="?FrontCol"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graduate"
+                    android:text="@string/societyName"
+                    android:textColor="#F3E8E8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_societyNameV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewback"
+                    android:textColor="?FrontCol"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graduate"
+                    android:text="@string/ownerName"
+                    android:textColor="#F3E8E8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_ownerNameV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewback"
+                    android:textColor="?FrontCol"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_mobileNoV_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graduate"
+                    android:text="@string/mobile"
+                    android:textColor="#F3E8E8"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+                    <TextView
+                            android:id="@+id/txt_mobileNoV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/textviewback"
+                            android:textColor="?FrontCol"
+                            android:textSize="24sp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/txt_mobileNoV_title"/>
+
+                    <ImageButton
+                        android:id="@+id/whatsapp_mobilNoV"
+                        android:layout_width="42dp"
+                        android:layout_height="42dp"
+                        android:translationZ="90dp"
+                        android:clipToPadding="false"
+                        android:foreground="@drawable/whatsapp"
+                        app:layout_constraintBottom_toBottomOf="@id/txt_mobileNoV"
+                        app:layout_constraintRight_toRightOf="@id/txt_mobileNoV" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graduate"
+                    android:text="@string/alternateNo"
+                    android:textColor="#F3E8E8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_alternateNoV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewback"
+                    android:textColor="?FrontCol"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graduate"
+                    android:text="@string/aadhar"
+                    android:textColor="#F3E8E8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_aadharV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewback"
+                    android:textColor="?FrontCol"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graduate"
+                    android:text="@string/fishLicenceValidity"
+                    android:textColor="#F3E8E8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_fish_licence_validityV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewback"
+                    android:textColor="?FrontCol"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graduate"
+                    android:text="@string/vts_validity"
+                    android:textColor="#F3E8E8"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_vts_validityV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textviewback"
+                    android:textColor="?FrontCol"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_cancelV"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_options"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/cancel"
+         android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

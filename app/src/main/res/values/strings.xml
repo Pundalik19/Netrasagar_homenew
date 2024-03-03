@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Netrasagar</string>
+    <string name="departure">DEPARTURE</string>
+    <string name="arrival">ARRIVAL</string>
+    <string name="fish_catch">FISH CATCH</string>
+    <string name="reports">REPORTS</string>
+    <string name="update">UPDATE</string>
+    <string name="crew">CREW</string>
+    <string name="search">SEARCH</string>
+    <string name="searchcrew">CREW NAME OR AADHAR</string>
+    <string name="searchvessel">VESSEL NAME OR VRC</string>
+    <string name="add">ADD</string>
+    <string name="cancel">CANCEL</string>
+    <string name="edit">EDIT</string>
+    <string name="save">SAVE</string>
+    <string name="address1">ADDRESS LINE 1</string>
+    <string name="address2">ADDRESS LINE 2</string>
+    <string name="address3">ADDRESS LINE 3</string>
+    <string name="jetty">JETTY</string>
+    <string name="vessel">VESSEL</string>
+    <string name="selectvessel">SELECT VESSEL</string>
+    <string name="state">STATE</string>
+    <string name="dob">DATE OF BIRTH</string>
+    <string name="height">HEIGHT IN CM</string>
+    <string name="mobile">MOBILE NO.</string>
+    <string name="aadhar">AADHAR NO.</string>
+    <string name="joiningDate">JOINING DATE</string>
+    <string name="healthCardNo">HEALTH CARD NO.</string>
+    <string name="date">DATE</string>
+    <string name="identificationMark">IDENTIFICATION MARK</string>
+    <string name="browse">BROWSE</string>
+    <string name="societyName">SOCIETY NAME</string>
+    <string name="vrc">VESSEL REGISTRATION NO.</string>
+    <string name="registrationDate">DATE OF REGISTRATION</string>
+    <string name="ownerName">OWNER NAME</string>
+    <string name="alternateNo">ALTERNATE NO.</string>
+    <string name="email">EMAIL ADDRESS</string>
+    <string name="gender">GENDER</string>
+    <string name="vesselType">VESSEL TYPE</string>
+    <string name="yardName">YARD NAME</string>
+    <string name="yardAddress">YARD ADDRESS</string>
+    <string name="age">AGE</string>
+    <string name="fish">FISH</string>
+    <string name="selectFish">SELECT FISH</string>
+    <string name="qty">QTY</string>
+    <string name="qtyKG">QTY in (KG)</string>
+    <string name="licencerenewal">LICENCE RENEWAL</string>
+
+
+    <string name="fish_catch_today">TODAY\'S FISH CATCH</string>
+    <string name="fishcatch_jettywise">JETTYWISE FISH CATCH</string>
+    <string name="fishcatch_fishwise">FISHWISE FISHCATCH</string>
+    <string name="fishcatch_Sel_period">Select Period</string>
+    <string-array name="fishcatch_period">
+        <item>TODAY</item>
+        <item>YESTERDAY</item>
+        <item>LAST 7 DAYS</item>
+        <item>LAST 1 MONTH</item>
+        <item>LAST 3 MONTHS</item>
+    </string-array>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="address">ADDRESS</string>
+    <string name="licenceno">LICENCE NUMBER</string>
+    <string name="issuedate">ISSUE DATE</string>
+    <string name="fees">FEES</string>
+    <string name="licenceyear">LICENCE YEAR</string>
+    <string name="recieptno">RECEIPT NO</string>
+    <string name="recieptdate">RECEIPT DATE</string>
+    <string name="recieptamount">RECEIPT AMOUNT</string>
+    <string name="remarks">REMARKS</string>
+    <string name="paymenttype">PAYMENT TYPE</string>
+    <string name="validitydate">VALIDITY DATE</string>
+    <string name="reportsfor">Reports For</string>
+    <string name="pass_issued">PASS ISSUED JETTYWISE</string>
+    <string name="pass_open">PASS OPEN</string>
+    <string name="topfishcatch">TOP FISH CATCH</string>
+    <string name="fishLicenceValidity">FISHING LICENCE VALIDITY</string>
+    <string name="total_pass_open">PASS OPEN - TOTAL</string>
+    <string name="approvePass">APPROVE PASS</string>
+    <string name="approve">APPROVE</string>
+    <string name="reject">REJECT</string>
+    <string name="pass_issued_on">PASS ISSUED ON</string>
+    <string name="voyage_days">VOYAGE DAYS</string>
+    <string name="diesel">DIESEL</string>
+    <string name="life_bouys">LIFE BOUYS</string>
+    <string name="life_jackets">LIFE JACKETS</string>
+    <string name="crew_count">CREW COUNT</string>
+    <string name="voyage_status">VOYAGE STATUS</string>
+    <string name="pass_issued_by">PASS ISSUED BY</string>
+    <string name="selectPass">SELECT PASS</string>
+    <string name="vesselName">VESSEL NAME</string>
+    <string name="gps">GPS</string>
+    <string name="vhf">VHF</string>
+    <string name="ais">AIS</string>
+    <string name="total_crew">TOTAL CREW</string>
+    <string name="lasVoyage">LAST VOYAGE</string>
+    <string name="all">ALL</string>
+    <string name="filter_crew">FILTER CREW</string>
+    <string name="pass_No">PASS NO.</string>
+    <string name="additional_crew">ADDITIONAL CREW</string>
+    <string name="crew_returned_additional">CREW RETURNED ADDITIONAL</string>
+    <string name="crewName">CREW NAME</string>
+    <string name="status">STATUS</string>
+    <string name="print">PRINT</string>
+    <string name="printConfirmMessage">Do you want to print Pass</string>
+    <string name="ratePerKg">Rate Per KG</string>
+    <string name="dof">DIRECTORATE OF FISHERIES</string>
+    <string name="governmentGoa">GOVERNMENT OF GOA</string>
+    <string name="scanAadharQr">SCAN AADHAR QR CODE</string>
+    <string name="noThanks">NO THANKS</string>
+    <string name="done">DONE</string>
+    <string name="reprintPass">REPRINT PASS</string>
+    <string name="welcome">Welcome </string>
+    <string name="governmentKerala">GOVERNMENT OF KERALA</string>
+    <string name="vts_validity">VTS Validity</string>
+
+    <string name="DATABASE_UPLOAD_URL">https://www.mss-util.in/pwdbilling/UPLOAD_DB.php?</string>
+    <string name="APP_DOWNLOAD_URL">https://www.mss-util.in/pwdbilling/spot_billing_app/msspwd.apk</string>
+    <string name="PAYTM_SALES_API">https://www.mss-util.in/pwdbilling/paytm/SaleAPI.php</string>
+
+    <string name="SERVERNAME">MSS</string>
+    <string name="DBNAME">netrasag_FISHDEPT</string>
+    <string name="IP">45.113.189.62</string>
+    <string name="DBUSER">netrasag_Netrasagar</string>
+    <string name="DBPASSWORD">Netra@2019Fish</string>
+
+    <string name="METER_PHOTO_UPLOAD_URL">https://www.mss-util.in/pwdbilling/spot_meter_photos.php?</string>
+
+    <!--
+            <string name="DATABASE_UPLOAD_URL">https://www.phe-sgoa.in/pwdbilling/UPLOAD_DB.php?</string>
+            <string name="APP_DOWNLOAD_URL">https://www.phe-sgoa.in/pwdbilling/spot_billing_app/msspwd.apk</string>
+            <string name="PAYTM_SALES_API">https://www.phe-sgoa.in/pwdbilling/paytm/SaleAPI.php</string>
+            <string name="METER_PHOTO_UPLOAD_URL">https://www.phe-sgoa.in/pwdbilling/spot_meter_photos.php?</string>
+
+            <string name="SERVERNAME">PHE</string>
+            <string name="DBNAME">phesgoa_pwd</string>
+            <string name="IP">45.113.189.69</string>
+            <string name="DBUSER">phesgoa_pwduser</string>
+            <string name="DBPASSWORD">PWDmss_user#6090</string>
+        -->
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    tools:context=".FishCatchAdd">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/fc_dd_jetty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:hint="@string/jetty"
+        android:padding="8dp"
+        android:background="@drawable/textedit_back"
+        android:onClick="select_jetty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:drawableEndCompat="@drawable/ic_arrow_down" />
+
+    <TextView
+        android:id="@+id/fc_dd_vessel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:hint="@string/selectvessel"
+        android:padding="8dp"
+        android:background="@drawable/textedit_back"
+        android:onClick="select_vessel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fc_dd_jetty"
+        app:drawableEndCompat="@drawable/ic_arrow_down" />
+
+    <TextView
+        android:id="@+id/fc_vesselName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:hint="@string/vesselName"
+        android:padding="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/textviewback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fc_dd_vessel"/>
+
+    <TextView
+        android:id="@+id/fc_vrc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:hint="@string/vrc"
+        android:padding="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/textviewback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fc_vesselName"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fc_fish_catch_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fc_vrc">
+        <TextView
+            android:id="@+id/fc_fish_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/fish"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginHorizontal="10dp"/>
+        <TextView
+            android:id="@+id/fc_dd_fish_select"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:hint="@string/selectFish"
+            android:onClick="select_fishList"
+            android:singleLine="true"
+            android:background="@drawable/textedit_back"
+            app:drawableEndCompat="@drawable/ic_arrow_down"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/fc_fish_label"
+            app:layout_constraintTop_toTopOf="@id/fc_fish_label"/>
+        <TextView
+            android:id="@+id/fc_qty_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/qty"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="@id/fc_fish_label"
+            app:layout_constraintTop_toBottomOf="@id/fc_fish_label"/>
+
+        <EditText
+            android:id="@+id/fc_qty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/qtyKG"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@+id/fc_btn_fishAdd"
+            app:layout_constraintStart_toEndOf="@id/fc_qty_label"
+            app:layout_constraintTop_toTopOf="@id/fc_qty_label"/>
+
+        <TextView
+            android:id="@+id/fc_rate_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/ratePerKg"
+            android:padding="8dp"
+            app:layout_constraintStart_toStartOf="@id/fc_fish_label"
+            app:layout_constraintTop_toBottomOf="@id/fc_qty_label"/>
+
+        <EditText
+            android:id="@+id/fc_rate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/ratePerKg"
+            android:textSize="24sp"
+            android:layout_marginLeft="10dp"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@+id/fc_btn_fishAdd"
+            app:layout_constraintStart_toEndOf="@id/fc_rate_label"
+            app:layout_constraintTop_toTopOf="@id/fc_rate_label"/>
+
+        <ImageButton
+            android:id="@+id/fc_btn_fishAdd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/add"
+            android:foreground="@drawable/add_button"
+            android:onClick="add_fish_catch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/fc_rate_label" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fc_fish_list_box"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_min="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fc_fish_catch_box"
+        app:layout_constraintBottom_toTopOf="@+id/fc_btn_save">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/fc_fishList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <Button
+            android:id="@+id/fc_btn_save"
+            style="@style/styleBtnGreen"
+            android:text="@string/save"
+            android:layout_marginTop="8dp"
+           app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/fc_btn_cancel"/>
+        <Button
+            android:id="@+id/fc_btn_cancel"
+            android:text="@string/cancel"
+            style="@style/styleBtnRed"
+            android:onClick="fc_cancel_event"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
